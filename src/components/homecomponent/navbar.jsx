@@ -12,8 +12,6 @@ function Navbar() {
   const [profileDropdown, setProfileDropdown] = useState(false);
   const { user, loading, logout } = useAuth();
 
-  
-
   return (
     <>
       <div className="flex fixed mb-50 z-20 font-semibold bg-white sm:w-full w-103 sm:space-x-[50%] space-x-20 sm:justify-normal justify-between pt-6 p-4">

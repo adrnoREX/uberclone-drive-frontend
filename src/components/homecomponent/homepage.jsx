@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast"
+import toast from "react-hot-toast";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -12,34 +12,31 @@ function Homepage() {
 
   return (
     <>
-      <div className="p-4 pt-12 sm:px-38 px-4 max-w-screen">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-12 sm:pt-20 pt-10 sm:pb-20 pb-10">
+      <div className="px-4 sm:px-8 lg:px-16 py-12 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 py-10 lg:py-20">
           <video
             src="/uber-video.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="max-w-[90vh] sm:block hidden max-h-[90vh] rounded-2xl shadow-lg"
+            className="w-full lg:w-1/2 rounded-2xl shadow-lg max-h-[70vh] object-cover"
           />
 
-          {/* Pickup + Drop Section */}
-          <section className="flex flex-col text-center max-w-lg w-full space-y-6">
-            <h1 className="sm:text-5xl text-3xl font-bold text-sky-500 leading-snug">
+          <section className="flex flex-col text-center lg:text-left max-w-lg w-full space-y-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sky-500 leading-snug">
               Get your first ride <br /> from here
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm sm:text-base">
               Book rides instantly, schedule for later, or share with friends
               all in one app.
             </p>
-
-            {/* Book Ride Button */}
-            <button
+            <div
               onClick={handleBookRide}
-              className="bg-sky-500 hover:bg-sky-600 font-semibold py-3 rounded-lg shadow-md transition"
+              className="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
             >
               Book a Ride
-            </button>
+            </div>
           </section>
         </div>
 
