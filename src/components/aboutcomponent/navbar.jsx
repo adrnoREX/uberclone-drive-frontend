@@ -19,7 +19,7 @@ function Navbar() {
         <div className="space-x-8 ">
           <div className="sm:flex space-x-8 hidden">
             <Link to="/">
-              <img src="/hut-drive.png" alt="home" className="w-6 h-6" />
+              <img src="/hut-about.png" alt="home" className="w-6 h-6" />
             </Link>
             <Link to="/ride">Ride</Link>
             <Link to="/drive">Drive</Link>
